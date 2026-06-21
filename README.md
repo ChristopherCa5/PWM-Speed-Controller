@@ -107,6 +107,8 @@ Output PWM duty cycle increases as the input increases.
 
 ![Finished circuit](Pictures%20and%20Videos/IMG_8663.JPG)
 
+I didn't take a picture of the completed speed controller, and don't have it with me right now, which is why I had to crop into a different picture that had it.
+
 ## Demo Video on RC car
 [![Watch the Demo](https://img.youtube.com/vi/I8uCNUa1c4s/maxresdefault.jpg)](https://www.youtube.com/watch?v=I8uCNUa1c4s&t=40s)
 
