@@ -12,7 +12,7 @@ A custom speed controller that takes a standard RC servo/PWM signal as input and
   - 50 Hz signal → refreshes every 20 ms
   - Low signal → 1 ms pulse
   - High signal → 2 ms pulse
-  - All other values fall between 1–2 ms
+  - All other values fall between 1–2 ms(only 5% difference between high and low signals)
 
 ## First Circuit: Just a Switch (No PWM)
 
@@ -25,8 +25,6 @@ The input voltage was sent through a cascaded RC filter to average the signal wh
 I simulated this circuit in LTspice.
 
 ### First Circuit Simulation
-
-![PWM ESC LTspice simulation](Pictures%20and%20Videos/PWM%20ESC%20LTspice.png)
 ![First LTspice simulation](Pictures%20and%20Videos/First_LTspice_simulation.png)
 
 ### Built on Breadboard
@@ -53,23 +51,25 @@ To create the triangle waves, I generated a clock signal and then integrated it.
 
 ![Triangle wave generation simulation](Pictures%20and%20Videos/20260526_232609.jpg)
 
+I later added a filter at the output just for nicer viewing in LTspice (this in not included in the actual built circuit).
+
 Since I didn't have much time, I only built a breadboard version to test the triangle waves.
 
 ### Breadboard — Generating Clock and Triangle Waves
 
 ![Breadboard clock and triangle wave generation](Pictures%20and%20Videos/20260527_141240.jpg)
 
-### Built on Protoboard
+### Built on Protoboard and connected to original circuit
 
 ![Triangle wave protoboard build](Pictures%20and%20Videos/20260528_152828.jpg)
 
 I built an extra board to generate the triangle waves so I could feed them into the inverting input instead of the voltage divider.
 
-This board ended up not working since something was shorting, but I wasn't able to determine the cause since everything was soldered very compactly.
+This board ended up not working since something was shorting, but I wasn't able to determine the cause since everything was soldered very compactly. I also didn't want to continue using this circuit just incase the short ended up breaking something, which would waste a lot of time for me to just find out a part is broken.
 
 ### Full Circuit on Breadboard
 
-To make sure everything would work as in simulation, I built a complete breadboard version of the circuit.
+To make sure everything would work as in simulation, I built a complete breadboard version of the circuit(probably should have done this in the beginning).
 
 ![Complete breadboard circuit](Pictures%20and%20Videos/20260528_232023.jpg)
 
@@ -83,25 +83,29 @@ This circuit ended up having two broken connections:
 1. Ground was disconnected from the RC input filter.
 2. Output was not connected to the pullup resistor.
 
+These would have been very difficult to find without the probe points, and the breadboard circuit to input signals that I knew worked.
+
 ## Completed LTspice Circuit
 
 ![Final speed controller schematic](Pictures%20and%20Videos/Final_Speed_controller.png)
 
-I didn't have time to implement the charge pump gate driver, but the circuit still worked well enough without it.
+I didn't have time to implement the charge pump gate driver, but the circuit still worked well enough without it. I was originally going to make two of these circuits, but I had finals, so I ran out of time. I would have used one with the gate driver for the flywheels of the nerf gun, and one without the charge pump for the feeder. I wanted the gate driver since the nmos transistors I was using were still in the edge of their saturation region, meaning they still weren't completely switched on. Since we weren't driving very big motors, this ended up not really being a problem.
 
 ### LTspice Simulation Results
 
 ![LTspice simulation results](Pictures%20and%20Videos/LTspice_sim_results.png)
 
+Using 5 different input signals from 1ms to 2ms, the output PWM duty cycle increases from 0 to 100%.
+
 ### PWM Output Measured from the Oscilloscope
 
 https://github.com/user-attachments/assets/ff06a7a5-2d89-42f0-9809-bfd7686500d2
 
-
+Output PWM duty cycle increases as the input increases.
 
 ## Finished Circuit
 
 ![Finished circuit](Pictures%20and%20Videos/IMG_8663.JPG)
 
-## 📽️ Demo Video
+## Demo Video on RC car
 [![Watch the Demo](https://img.youtube.com/vi/I8uCNUa1c4s/maxresdefault.jpg)](https://www.youtube.com/watch?v=I8uCNUa1c4s&t=40s)
