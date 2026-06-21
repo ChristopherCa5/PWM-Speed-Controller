@@ -112,4 +112,4 @@ Output PWM duty cycle increases as the input increases.
 
 ## Completed LTspice Circuit(without notes)
 
-![Final speed controller schematic](Pictures%20and%20Videos/PWM ESC LTspice.png)
+![PWM ESC LTspice simulation](Pictures%20and%20Videos/PWM%20ESC%20LTspice.png)
