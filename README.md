@@ -1,7 +1,3 @@
-
-
-https://github.com/user-attachments/assets/b055bfa3-6481-4610-854a-3c87b438852d
-
 # RC PWM to Flywheel ESC Converter
 
 A custom speed controller that takes a standard RC servo/PWM signal as input and outputs a PWM throttle signal to drive the flywheels of a Nerf gun — built to behave like a normal RC car speed controller.
