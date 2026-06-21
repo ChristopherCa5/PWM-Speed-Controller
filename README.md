@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/b055bfa3-6481-4610-854a-3c87b438852d
+
 # RC PWM to Flywheel ESC Converter
 
 A custom speed controller that takes a standard RC servo/PWM signal as input and outputs a PWM throttle signal to drive the flywheels of a Nerf gun — built to behave like a normal RC car speed controller.
@@ -95,6 +99,9 @@ I didn't have time to implement the charge pump gate driver, but the circuit sti
 ![LTspice simulation results](Pictures%20and%20Videos/LTspice_sim_results.png)
 
 ### PWM Output Measured from the Oscilloscope
+
+https://github.com/user-attachments/assets/ff06a7a5-2d89-42f0-9809-bfd7686500d2
+
 
 
 ## Finished Circuit
