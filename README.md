@@ -96,12 +96,13 @@ I didn't have time to implement the charge pump gate driver, but the circuit sti
 
 ### PWM Output Measured from the Oscilloscope
 
-https://github.com/ChristopherCa5/PWM-Speed-Controller/raw/main/Pictures%20and%20Videos/"20260602_144045 - Trim.mp4"
-> **Note on embedding this video:** GitHub will only auto-render an inline, playable video player in a README if the video was uploaded through GitHub's own web drag-and-drop uploader (in an issue, PR, or the README editor on github.com) — that gives you a `https://github.com/user-attachments/assets/...` link. A plain repo-relative path to an `.mp4` file (like the one above, once you fill in your username/repo) will **not** autoplay inline; it just renders as a clickable link that opens/downloads the raw file.
+https://github.com/ChristopherCa5/PWM-Speed-Controller/raw/main/Pictures%20and%20Videos/20260602_144045%20-%20Trim.mp4
+
+> **Note on embedding this video:** GitHub will only auto-render an inline, playable video player in a README if the video was uploaded through GitHub's own web drag-and-drop uploader (in an issue, PR, or the README editor on github.com) — that gives you a `https://github.com/user-attachments/assets/...` link. The repo-relative path above (now pointing at the correct filename, `20260602_144045 - Trim.mp4`, with spaces percent-encoded as `%20`) will **not** autoplay inline; it just renders as a clickable link that opens/downloads the raw file.
 >
 > To get the real inline player:
 > 1. Go to your repo on github.com and open the README in the web editor (or open an Issue/PR — same uploader).
-> 2. Drag `20260602_144045.mp4` directly into the text box.
+> 2. Drag `20260602_144045 - Trim.mp4` directly into the text box.
 > 3. GitHub uploads it and inserts a `https://github.com/user-attachments/assets/...` link automatically.
 > 4. Copy that generated link and paste it here in place of the raw-file link above.
 
@@ -109,8 +110,5 @@ https://github.com/ChristopherCa5/PWM-Speed-Controller/raw/main/Pictures%20and%2
 
 ![Finished circuit](Pictures%20and%20Videos/IMG_8663.JPG)
 
-### Video of the Circuit Working
-
-[![Video of the circuit working](https://img.youtube.com/vi/I8uCNUa1c4s/maxresdefault.jpg)](https://youtu.be/I8uCNUa1c4s?t=40)
-
-*(Click the thumbnail to watch on YouTube — GitHub doesn't support embedded video players in README files.)*
+## 📽️ Demo Video
+[![Watch the Demo](https://img.youtube.com/vi/I8uCNUa1c4s/maxresdefault.jpg)](https://www.youtube.com/watch?v=I8uCNUa1c4s&t=40s)
