@@ -109,3 +109,9 @@ Output PWM duty cycle increases as the input increases.
 
 ## Demo Video on RC car
 [![Watch the Demo](https://img.youtube.com/vi/I8uCNUa1c4s/maxresdefault.jpg)](https://www.youtube.com/watch?v=I8uCNUa1c4s&t=40s)
+
+
+
+## Completed LTspice Circuit
+
+![Final speed controller schematic](Pictures%20and%20Videos/PWM ESC LTspice.png)
