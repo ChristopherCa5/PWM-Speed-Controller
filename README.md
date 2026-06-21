@@ -37,7 +37,6 @@ I simulated this circuit in LTspice.
 
 ![Protoboard build](Pictures%20and%20Videos/20260528_143124.jpg)
 
-*End of first circuit.*
 
 ## Adding PWM
 
